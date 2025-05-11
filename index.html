@@ -34,66 +34,98 @@
 </head>
 
 <body class="antialiased text-gray-900 bg-white">
-  <!-- Header -->
-  <header class="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="./src/images/hero/header-logo.png" alt="Creatives For You Logo" class="h-8 w-auto" />
-      </div>
-
-      <!-- Navigation -->
-      <nav class="hidden md:flex space-x-8 text-sm font-medium">
-        <a href="#" class="text-gray-700 hover:text-red-600 transition">Home</a>
-        <a href="#" class="text-red-600 border-b-2 border-red-600 pb-1">About Us</a>
-        <a href="#" class="text-gray-700 hover:text-red-600 transition">Upskill</a>
-        <a href="#" class="text-gray-700 hover:text-red-600 transition">Contact us</a>
-      </nav>
-
-      <!-- CTA Button -->
-      <a href="#"
-        class="bg-red-500 text-white px-5 py-2 rounded-full hover:bg-red-600 transition text-sm font-medium shadow-md hover:scale-105">
-        Register Interest
-      </a>
+<!-- Header -->
+<header class="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="./src/images/hero/header-logo.png" alt="Creatives For You Logo" class="h-8 w-auto" />
     </div>
-  </header>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="#" class="text-gray-700 hover:text-red-600 transition">Home</a>
+      <a href="#" class="text-red-600 border-b-2 border-red-600 pb-1">About Us</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 transition">Upskill</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 transition">Contact us</a>
+    </nav>
+
+    <!-- CTA Button -->
+    <a href="#"
+      class="hidden md:inline-block bg-red-500 text-white px-5 py-2 rounded-full hover:bg-red-600 transition text-sm font-medium shadow-md hover:scale-105">
+      Register Interest
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none z-50">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-menu"
+    class="fixed top-0 left-0 w-3/4 max-w-xs h-full bg-white shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex justify-between items-center px-6 py-4 border-b">
+      <img src="./src/images/hero/header-logo.png" alt="Logo" class="h-8" />
+      <button id="close-menu" class="text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col space-y-6 px-6 py-6 text-sm font-medium">
+      <a href="#" class="text-gray-700 transform -translate-x-6 opacity-0 transition-all duration-300 delay-100 hover:text-red-600">Home</a>
+      <a href="#" class="text-red-600 border-b-2 border-red-600 pb-1 transform -translate-x-6 opacity-0 transition-all duration-300 delay-200">About Us</a>
+      <a href="#" class="text-gray-700 transform -translate-x-6 opacity-0 transition-all duration-300 delay-300 hover:text-red-600">Upskill</a>
+      <a href="#" class="text-gray-700 transform -translate-x-6 opacity-0 transition-all duration-300 delay-400 hover:text-red-600">Contact us</a>
+      <a href="#" class="bg-red-500 text-white px-5 py-2 rounded-full text-center mt-4 hover:bg-red-600 transition">Register Interest</a>
+    </nav>
+  </div>
+</header>
 
   <main>
     <!-- Hero Section start -->
-    <section id="hero" class="max-w-[1440px] mx-auto pb-4 lg:pt-0 bg-[#FAFAFA]">
-      <div class="first_layer h-[715px]">
-        <div
-          class="curved flex flex-col justify-center relativ h-full bg-[url('./images/hero/hero.jpg')] bg-cover bg-bottom">
+    <section id="hero" class="max-w-[1440px] mx-auto bg-[#FAFAFA]">
+      <div class="h-[600px] sm:h-[700px] md:h-[715px] relative">
+        <div class="flex flex-col justify-center h-full bg-[url('./images/hero/hero.jpg')] bg-cover bg-bottom relative">
+
           <!-- content - start -->
           <div
-            class="flex flex-col justify-center items-center lg:pt-12 xl:pt-17 max-w-[825px] mx-auto text-center h-10/12 px-10 sm:px-0">
-            <p class="font-bold text-white md:text-lg xl:text-lg">
-              Discover <span class="text-[#F44335]">-</span> Interact
-              <span class="text-[#F44335]">-</span> Engage
+            class="flex flex-col justify-center items-center text-center px-4 sm:px-8 md:px-16 h-full max-w-[850px] mx-auto z-10 pt-8 sm:pt-12 md:pt-0">
+            <p class="font-bold text-white text-sm sm:text-base md:text-lg leading-relaxed">
+              Discover <span class="text-[#F44335]">-</span> Interact <span class="text-[#F44335]">-</span> Engage
             </p>
 
-            <h1 class="font-bold text-zinc-50 text-[28px] md:text-[64px] md:mb-13 leading-[5.125rem]">
+            <h1
+              class="font-bold text-zinc-50 text-[24px] sm:text-[40px] md:text-[54px] lg:text-[64px] leading-tight md:leading-[5.125rem] mt-2 sm:mt-4">
               Connecting
-              <span class="text-[#F44335] md:inline-block border-0 md:border-b-[3px] border-[#F44335]">talent</span>
+              <span class="text-[#F44335] border-b-0 md:border-b-[3px] border-[#F44335]">talent</span>
               to opportunity through
-              <span class="text-[#F44335] md:inline-block border-0 md:border-b-[3px] border-[#F44335]">skills</span>
+              <span class="text-[#F44335] border-b-0 md:border-b-[3px] border-[#F44335]">skills</span>
             </h1>
 
-            <p class="text-zinc-50 mb-14 xl:text-lg select-all selection:bg-red-600 selection:text-white">
-              We foster a skill-focussed environment enabling students to
-              navigate their career with their self-paced learning journey and
-              businesses to gain market-ready talent.
+            <p
+              class="text-zinc-50 mt-4 sm:mt-6 mb-8 text-sm sm:text-base xl:text-lg px-2 sm:px-6 md:px-10 select-all selection:bg-red-600 selection:text-white">
+              We foster a skill-focussed environment enabling students to navigate their career with their self-paced
+              learning journey and businesses to gain market-ready talent.
             </p>
 
             <a href="#"
-              class="inline-block bg-white px-9 py-4 text-red-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-red-100 transition hover:scale-105">
+              class="inline-block bg-white text-red-600 font-semibold px-7 py-3 sm:px-10 sm:py-4 rounded-full shadow-md hover:bg-red-100 transition-transform duration-200 hover:scale-105">
               Ask questions
             </a>
           </div>
           <!-- content - end -->
 
           <!-- bottom curve svg -->
-          <div class="mt-auto">
+          <div class="absolute bottom-0 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 175" fill="none" class="w-full">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1456 175H0V0C242.667 53.3333 485.333 80 728 80C970.667 80 1213.33 53.3333 1456 0V175Z"
@@ -104,6 +136,7 @@
       </div>
     </section>
     <!-- Hero Section end -->
+
 
     <!-- =================== Empower Section Start =================== -->
     <section class="bg-neutral-100 px-4 md:px-8 py-12 max-w-7xl mx-auto">
@@ -860,6 +893,32 @@
   <!-- =================== Footer-Section End =================== -->
 
 
+<!-- Mobile Menu toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const closeBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = mobileMenu.querySelectorAll('nav a');
+
+  function openMenu() {
+    mobileMenu.classList.remove('-translate-x-full');
+    navLinks.forEach((link, index) => {
+      setTimeout(() => {
+        link.classList.remove('opacity-0', '-translate-x-6');
+      }, 100 * index);
+    });
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add('-translate-x-full');
+    navLinks.forEach(link => {
+      link.classList.add('opacity-0', '-translate-x-6');
+    });
+  }
+
+  menuBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+</script>
 
 </body>
 
